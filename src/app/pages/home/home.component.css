@@ -1,0 +1,40 @@
+form{
+    margin: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(121, 121, 121);
+    width: 40%;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px 8px floralwhite;
+}
+p{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 8px 20px;
+}
+label{
+    color: black;
+    font-weight: 600;
+    border: none;
+    margin: 16px 20px;
+}
+input{
+
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95); 
+    margin: 15px -18px; 
+     
+}
+button{
+    margin: 0px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+.alert{
+  font-weight: 600;
+  color: rgb(22, 22, 22);
+}
+#text_incorrecto{
+    font-weight: 600;
+}

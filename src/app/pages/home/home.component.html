@@ -1,0 +1,37 @@
+
+    <form action="">
+
+        <div class="row">
+            <div class="col">
+                <p>Login</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col py-2">
+                <label class="form-control"  for="" >Usuario:</label><br>
+                <label class="form-control"  for="">Password:</label>
+            </div>
+            <div class="col">
+                <input class="form-control"  type="text" [(ngModel)]="Usuario" id="Usuario" name="Usuario" ><br>
+                <input class="form-control"  type="number" [(ngModel)]="Password" id="Password" name="Password" >
+            </div>
+        </div>
+        <div class="row px-4">
+            <div class="col">
+                <button type="button" class="btn btn-outline-info" (click)="analizandodatos()" >LOGIN</button>
+                <button type="reset" class="btn btn-outline-warning"(click)="borrardatos()">ERASE</button>
+            </div>
+        </div>
+        <div class="row py-1 px-5">
+            <div class="col">
+                <div class="alert" *ngIf="show; else elseBlock">Bienvenido usuario {{Usuario}}
+                   <ul>
+                    <li><a href="" class="link-info" >HOME</a></li><br>
+                    <li><a href="" class="link-info" >SUPPORT</a></li><br>
+                    <li><a href="" class="link-info" >CONTACT</a></li>
+                   </ul>
+                </div>
+                <ng-template #elseBlock><span id="text_incorrecto" class="text-danger" >Credenciales incorrectas, intentalo nuevamente.</span></ng-template>
+            </div>
+        </div>
+    </form>
